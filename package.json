@@ -4,10 +4,11 @@
   "sideEffects": false,
   "type": "module",
   "scripts": {
-    "build": "remix vite:build",
+    "build": "remix vite:build && npm run build:server",
+    "build:server": "esbuild server.ts --platform=node --outdir=build/server",
     "dev": "node ./server.js",
     "lint": "eslint --ignore-path .gitignore --cache --cache-location ./node_modules/.cache/eslint .",
-    "start": "cross-env NODE_ENV=production node ./server.js",
+    "start": "cross-env NODE_ENV=production node build/server/server.js",
     "typecheck": "tsc"
   },
   "dependencies": {

@@ -18,7 +18,9 @@ const viteDevServer =
 const remixHandler = createRequestHandler({
   build: viteDevServer
     ? () => viteDevServer.ssrLoadModule("virtual:remix/server-build")
-    : await import("./build/server/index.js"),
+    : // @ts-expect-error this file is generated at build time and relative to build directory
+      // eslint-disable-next-line import/no-unresolved
+      await import("./index.js"),
 });
 
 const app = express();
