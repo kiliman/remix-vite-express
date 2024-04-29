@@ -1,34 +1,6 @@
-# Welcome to Remix + Vite!
+# remix-vite-express
 
-📖 See the [Remix docs](https://remix.run/docs) and the [Remix Vite docs](https://remix.run/docs/en/main/future/vite) for details on supported features.
+This repo no longer has the latest example of the Remix+Vite+Express plugin and
+helper function.
 
-## Development
-
-Run the Express server with Vite dev middleware:
-
-```shellscript
-npm run dev
-```
-
-## Deployment
-
-First, build your app for production:
-
-```sh
-npm run build
-```
-
-Then run the app in production mode:
-
-```sh
-npm start
-```
-
-Now you'll need to pick a host to deploy it to.
-
-### DIY
-
-If you're familiar with deploying Express applications you should be right at home. Just make sure to deploy the output of `npm run build`
-
-- `build/server`
-- `build/client`
+Go directly to the repo [`remix-express-vite-plugin`](https://github.com/kiliman/remix-express-vite-plugin) for the latest info and sample app.
